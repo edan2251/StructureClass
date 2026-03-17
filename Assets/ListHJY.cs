@@ -23,9 +23,27 @@ public class ListHJY<T>
         boxes[Count++] = item;                  // 새로운 데이터를 배열에 추가하고 개수를 증가
     }
 
+
+    //Remove 까먹음
+
+    /*
+
+    public T GetValue(int index)
+    {
+        return boxes[index];
+    }
+
+    public T SetValue(int index, T value)
+    {
+        return boxes[index] = value;
+    }
+    */
+
+    
     public T this[int index]                    // 인덱서를 통해 배열에 접근할 수 있도록 구현
     {
         get => boxes[index];                    // 인덱스에 해당하는 데이터를 반환
         set => boxes[index] = value;            // 인덱스에 해당하는 위치에 데이터를 설정
     }
+    
 }

@@ -74,4 +74,6 @@ public class Test : MonoBehaviour
         cardLog.Clear();
         Debug.Log($"초기화 후 개수: {cardLog.Count}"); // 출력: 0
     }
+
+
 }
