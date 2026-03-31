@@ -5,11 +5,15 @@ public class Test : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        ListTest();
+        //ListTest();
 
-        Debug.Log("=====================================");
+        //Debug.Log("=====================================");
 
-        LinkedListTest();
+        //LinkedListTest();
+
+        //Debug.Log("=====================================");
+
+        DictionaryTest();
     }
 
     void ListTest()
@@ -75,5 +79,18 @@ public class Test : MonoBehaviour
         Debug.Log($"초기화 후 개수: {cardLog.Count}"); // 출력: 0
     }
 
-
+    void DictionaryTest()
+    {
+            DictionaryHJY myDictionary = new DictionaryHJY();
+    
+            //데이터 추가
+            myDictionary.Add("Player1", 5125334124124214111);
+            myDictionary.Add("Player2", "이게몇점일까요");
+            myDictionary.Add("Player3", 300 + "이거도출력돼?");
+    
+            //데이터 조회
+            Debug.Log($"Player1의 점수: {myDictionary.Get("Player1")}");
+            Debug.Log($"Player2의 점수: {myDictionary.Get("Player2")}");
+            Debug.Log($"Player3의 점수: {myDictionary.Get("Player3")}");
+    }
 }
