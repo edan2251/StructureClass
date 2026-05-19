@@ -13,7 +13,18 @@ public class Test : MonoBehaviour
 
         //Debug.Log("=====================================");
 
-        DictionaryTest();
+        //DictionaryTest();
+
+        for (int i = 0; i < 10; i++)
+        {
+            Debug.Log("º¯¼ö" + i);
+        }
+    }
+
+
+    private void Update()
+    {
+        
     }
 
     void ListTest()
